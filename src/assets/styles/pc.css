@@ -1,0 +1,34 @@
+.head{
+    padding-left: 2rem;
+}
+.head__descripton{
+    font-size: 1.8rem;
+}
+.team{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+    padding-right: 6rem;
+}
+.profession{
+    font-size: 1.2rem;
+}
+.name{
+    font-size: 1.8rem;
+}
+.team__container{
+    padding-top: 0;
+}
+.team__container--position{
+    padding-top: 9rem;
+}
+.team__image{
+    width: 90%;
+    object-fit: contain;
+}
+.team__container--top{
+    padding-top: 0;
+}
+.team__container--bottom{
+    padding-top: 11.5rem;
+}

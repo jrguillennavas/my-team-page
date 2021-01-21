@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'PT Serif', serif;
+}
+.layout{
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 1fr 10rem;
+    grid-template-areas: "head head"
+                         "team team"
+                         "foot foot";
+}
+.head{
+    grid-area: head;
+    margin-bottom: 3rem;
+}
+.head__container{
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head__title{
+    font-size: 3.6rem;
+   
+}
+.head__subtitle{
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+.head__descripton{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+}
+.team{
+    grid-area: team;
+    display: grid;
+    grid-row-gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.info{
+ position: relative;
+ margin: auto;
+ width: 80%;
+}
+.team__image{
+    width: 90%;
+    object-fit: contain;
+}
+.team__container--position{
+    padding-top: 4.5rem;
+}
+.profession{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.name{
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    position: absolute;
+}
+.foot{
+    grid-area: foot;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 200;
+    color: #A9A9A9;
+}
